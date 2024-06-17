@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Reciclaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Reciclaje</h1>
+    </header>
+    <main>
+        <section id="registro-usuario">
+            <h2>Registro de Usuario</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        
+        <section id="registro-materiales">
+            <h2>Registro de Materiales a Reciclar</h2>
+            <form>
+                <label for="tipo-material">Tipo de Material:</label>
+                <select id="tipo-material" name="tipo-material" required>
+                    <option value="botella">Botella</option>
+                    <option value="carton">Cartón</option>
+                    <option value="papel">Papel</option>
+                    <option value="otros">Otros</option>
+                </select>
+                
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+                
+                <button type="submit">Registrar Material</button>
+            </form>
+        </section>
+        
+        <section id="registro-recompensas">
+            <h2>Registro de Recompensas</h2>
+            <form>
+                <label for="tipo-recompensa">Tipo de Recompensa:</label>
+                <input type="text" id="tipo-recompensa" name="tipo-recompensa" required>
+                
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="3" required></textarea>
+                
+                <button type="submit">Registrar Recompensa</button>
+            </form>
+        </section>
+        
+        <section id="estadisticas-reciclaje">
+            <h2>Estadísticas de Reciclaje</h2>
+            <p>Aquí mostrarás las estadísticas de reciclaje cuando tengas datos disponibles.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema de Gestión de Reciclaje</p>
+    </footer>
+</body>
+</html>
